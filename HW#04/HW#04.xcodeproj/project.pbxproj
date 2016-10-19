@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C1608BC01DB8184A0042E2EB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1608BBF1DB8184A0042E2EB /* main.cpp */; };
+		C1608BC81DB820660042E2EB /* Double Capacity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1608BC61DB820660042E2EB /* Double Capacity.cpp */; };
+		C1608BCB1DB824BE0042E2EB /* Smallest element.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1608BC91DB824BE0042E2EB /* Smallest element.cpp */; };
+		C1608BCE1DB82C060042E2EB /* Rectangle2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1608BCC1DB82C060042E2EB /* Rectangle2D.cpp */; };
+		C1608BD11DB82E3F0042E2EB /* Course.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1608BCF1DB82E3F0042E2EB /* Course.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		C1608BBC1DB818490042E2EB /* HW#04 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "HW#04"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1608BBF1DB8184A0042E2EB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C1608BC61DB820660042E2EB /* Double Capacity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Double Capacity.cpp"; sourceTree = "<group>"; };
+		C1608BC71DB820660042E2EB /* Double Capacity.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "Double Capacity.hpp"; sourceTree = "<group>"; };
+		C1608BC91DB824BE0042E2EB /* Smallest element.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Smallest element.cpp"; sourceTree = "<group>"; };
+		C1608BCA1DB824BE0042E2EB /* Smallest element.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "Smallest element.hpp"; sourceTree = "<group>"; };
+		C1608BCC1DB82C060042E2EB /* Rectangle2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle2D.cpp; sourceTree = "<group>"; };
+		C1608BCD1DB82C060042E2EB /* Rectangle2D.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Rectangle2D.hpp; sourceTree = "<group>"; };
+		C1608BCF1DB82E3F0042E2EB /* Course.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Course.cpp; sourceTree = "<group>"; };
+		C1608BD01DB82E3F0042E2EB /* Course.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Course.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				C1608BBF1DB8184A0042E2EB /* main.cpp */,
+				C1608BC61DB820660042E2EB /* Double Capacity.cpp */,
+				C1608BC71DB820660042E2EB /* Double Capacity.hpp */,
+				C1608BC91DB824BE0042E2EB /* Smallest element.cpp */,
+				C1608BCA1DB824BE0042E2EB /* Smallest element.hpp */,
+				C1608BCC1DB82C060042E2EB /* Rectangle2D.cpp */,
+				C1608BCD1DB82C060042E2EB /* Rectangle2D.hpp */,
+				C1608BCF1DB82E3F0042E2EB /* Course.cpp */,
+				C1608BD01DB82E3F0042E2EB /* Course.hpp */,
 			);
 			path = "HW#04";
 			sourceTree = "<group>";
@@ -119,7 +139,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1608BCB1DB824BE0042E2EB /* Smallest element.cpp in Sources */,
 				C1608BC01DB8184A0042E2EB /* main.cpp in Sources */,
+				C1608BD11DB82E3F0042E2EB /* Course.cpp in Sources */,
+				C1608BC81DB820660042E2EB /* Double Capacity.cpp in Sources */,
+				C1608BCE1DB82C060042E2EB /* Rectangle2D.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
