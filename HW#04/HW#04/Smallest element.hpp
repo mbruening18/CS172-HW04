@@ -13,7 +13,7 @@
 
 //EX04_03 – Liang Programming Exercise 11.5: Find the smallest element
 
-int* smallestElement ();
+int smallestElement (int* Array,int size);
 
 
 #endif /* Smallest_element_hpp */

@@ -19,6 +19,8 @@
 
 using namespace std;
 
+
+
 Course:: Course (const string& courseName, int capacity)
 {
     numberOfStudents = 0;
@@ -55,11 +57,13 @@ string* Course::getStudents() const
 
 int Course::getNumberOfStudents() const
 {
-    return getNumberOfStudents();
+    return numberOfStudents;
 }
+
 int Course:: Clear()
 {
-    delete students;
+    numberOfStudents = 0;
+    return 0;
 }
 
 

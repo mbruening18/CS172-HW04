@@ -19,8 +19,8 @@ class Course
 {
 private:
     int capacity;
-    int courseName;
-    int students;
+    string courseName;
+    string* students;
     int numberOfStudents;
     
 public:
@@ -32,7 +32,6 @@ public:
     string* getStudents() const;
     int getNumberOfStudents() const;
     int Clear();
-    
 
 };
 

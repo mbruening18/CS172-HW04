@@ -16,12 +16,11 @@ using namespace std;
 
 //EX04_03 – Liang Programming Exercise 11.5: Find the smallest element
 
-int* smallestElement ()
+int smallestElement (int* Array,int size)
 {
-    int Array []= {1,2,4,5,10,100,2,-22};
-    
+
     int smallest = Array[0] ;
-    for ( int i=1;i < sizeof(Array)/sizeof(Array[0]);++i )
+    for ( int i=1; i < size; ++i)
         {
             if ( Array[i] < smallest )
             {
@@ -29,9 +28,8 @@ int* smallestElement ()
             }
             
         }
-    
-    cout << smallest<< '\n';
-    return 0;
+   
+    return smallest;
     
 }
 
