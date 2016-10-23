@@ -11,85 +11,84 @@
 
 #include "Rectangle2D.hpp"
 
-
 /*
-Rectangle2D :: Rectangle2D()
+Rectangle2D::Rectangle2D()
 {
-    
+    x = 0;
+    y = 0;
+    width = 1;
+    height = 1;
 }
 
-double Rectangle2D :: x
+int Rectangle2D::getx()
 {
-    
+    return x;
 }
 
-double Rectangle2D :: y
+int Rectangle2D::gety()
 {
-    
+    return y;
 }
 
-int Rectangle2D :: getx
+void Rectangle2D::setx(int x)
 {
-    
+    this->x=x;
 }
 
-int Rectangle2D :: gety
+void Rectangle2D::sety(int y)
 {
-    
+    this->y= y;
 }
 
-int Rectangle2D :: setx
+double Rectangle2D::getwidth()
 {
-    return 0;
+    return width;
 }
 
-int Rectangle2D :: sety
+double Rectangle2D::getheight()
 {
-    return 0;
+    return height;
 }
 
-double Rectangle2D :: width
+void Rectangle2D::setwidth(double width)
 {
-    return 0;
+    this->width=width;
 }
 
-double Rectangle2D :: height
+void Rectangle2D::setheight(double height)
 {
-    return 0;
+    this->height= height;
 }
 
-double Rectangle2D :: getwidth
+int Rectangle2D::getArea()const
 {
-    return 0;
+
+    return width*height;
 }
 
-double Rectangle2D :: getheight
+int Rectangle2D::getPerimeter()const
 {
-    return 0;
+    return width*2 + height*2;
 }
 
-int Rectangle2D :: getArea()const
+bool Rectangle2D::contains(double x, double y)const
 {
-    
+    return x >= this->x && x <= this->x + this->width && y >= this->y && y <= this->height;
+    return false;
 }
 
-int Rectangle2D ::getPerimeter()const
+bool Rectangle2D::contains(const Rectangle2D &r)const
 {
-    
+    //not sure how to do this yet. he said use this function, i dont know which one and he said worth more points. I dont understand he had to go
+    //return x >= this->x && x <= this->x + this->width && y >= this->y && y <= this >height;
+    return false;
 }
 
-void Rectangle2D :: contains(double x, double y)const
+bool Rectangle2D::overlaps(const Rectangle2D &r)const
 {
-    
+    //not sure how to do this yet. he said use this function, i dont know which one and he said worth more points. I dont understand he had to go
+    //return x >= this->x && x <= this->x + this->width && y >= this->y && y <= this->height;
+    return false;
 }
 
-void Rectangle2D ::contains(const Rectangle2D &r)const
-{
-    
-}
-
-void Rectangle2D ::overlaps(const Rectangle2D &r)const
-{
-    
-}
  */
