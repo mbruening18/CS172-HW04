@@ -14,10 +14,8 @@
 
 //EX04_02 – Liang Programming Exercise 11.3: Increase array size
 
+// promises to use
 int* doubleCapacity (const int* list, int size);
-
-
-
 
 
 

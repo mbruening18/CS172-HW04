@@ -39,15 +39,17 @@ string Course::getCourseName() const
     return courseName;
 }
 
+//adds student to the course
 void Course:: addStudent(const string& name)
 {
+    //if not at capacity adds student to course
     if(numberOfStudents != capacity)
     {
         students[numberOfStudents] = name;
         numberOfStudents++;
     }
     
-    
+    //checks if there is capacity, if not then doubles capacity
     if(numberOfStudents == capacity)
     {
         string *newList = new string[2*capacity];
@@ -55,33 +57,46 @@ void Course:: addStudent(const string& name)
         {
             newList[i] = students[i];
         }
+        capacity=2*capacity;
+        
+        delete []students;
+        students=newList;
+        
     }
 }
 
+//drops student from the course
 void Course:: dropStudent(const string& name)
 {
-    string *ptr = students;
-    for(ptr =students; ptr < students+capacity; ptr++)
+    for (int i = 0; i < numberOfStudents; i++)
     {
-        if(*ptr == name)
+        if (students[i] == name)
         {
-            *ptr = "";
+            //checks to see if students is the couse
+            for(int j = i+1; j < numberOfStudents; j++)
+            {
+                students[j-1] = students[j];
+            }
+            students[numberOfStudents-1] = "";
+            //drops student
+            numberOfStudents--;
         }
-    
     }
-    numberOfStudents--;
 }
 
+//gets the students
 string* Course::getStudents() const
 {
     return students;
 }
 
+//calls number of students
 int Course::getNumberOfStudents() const
 {
     return numberOfStudents;
 }
 
+//clears number of students
 int Course:: Clear()
 {
     numberOfStudents = 0;

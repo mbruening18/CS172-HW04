@@ -18,6 +18,7 @@ using namespace std;
 
 int* doubleCapacity (const int* list, int SIZE)
 {
+    //makes the new size equal to the old times 2
     int newsize = SIZE *2;
     
     int *p = new int[newsize];
@@ -26,6 +27,7 @@ int* doubleCapacity (const int* list, int SIZE)
     {
         p[i] = list[i];
     }
+    //delets after uses
     delete[] list;
     return p;
 }

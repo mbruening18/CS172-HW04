@@ -16,9 +16,9 @@ using namespace std;
 
 //EX04_03 – Liang Programming Exercise 11.5: Find the smallest element
 
+// finds the smallest element
 int smallestElement (int* Array,int size)
 {
-
     int smallest = Array[0] ;
     for ( int i=1; i < size; ++i)
         {
@@ -28,7 +28,7 @@ int smallestElement (int* Array,int size)
             }
             
         }
-   
+   //returns the smallest in the array after checking
     return smallest;
     
 }

@@ -13,6 +13,7 @@
 
 //EX04_03 – Liang Programming Exercise 11.5: Find the smallest element
 
+//promises to use
 int smallestElement (int* Array,int size);
 
 

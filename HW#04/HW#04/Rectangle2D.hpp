@@ -13,40 +13,44 @@
 
 
 //EX04_04 – Liang Programming Exercise 11.9: Geometry: The Rectangle2D class
-/*
+
+//declares class
 class Rectangle2D
 {
+    //mkes it private
 private:
-    static double x;
-    static double y;
+    double x;
+    double y;
 
-    static double width;
-    static double height;
+    double width;
+    double height;
    
+    //makes it public
 public:
     
-    int getx();
-    int gety();
+    int getx()const; //gets
+    int gety()const; //gets
 
-    void setx(int y);
-    void sety(int y);
+    void setx(int x); //sets
+    void sety(int y); //sets
    
-    double getwidth();
-    double getheight();
+    double getwidth()const;  //gets
+    double getheight()const; //gets
    
-    void setwidth(double width);
-    void setheight(double height);
-
-    Rectangle2D();
-  
-    int getArea()const;
-    int getPerimeter()const;
+    void setwidth(double width); //sets
+    void setheight(double height); //sets
     
-    bool contains(double x, double y)const;
-    bool contains(const Rectangle2D &r)const;
-    bool overlaps(const Rectangle2D &r)const;
+    Rectangle2D(); //no arg-constuctor
+    Rectangle2D(int x, int y, int width, int height); //arg-constuctor
+  
+    int getArea()const; //gets
+    int getPerimeter()const; //gets
+    
+    bool contains(double x, double y)const; //checks
+    bool contains(const Rectangle2D &r)const; //checks
+    bool overlaps(const Rectangle2D &r)const; //checks
 
 };
  
- */
+
 #endif /* Rectangle2D_hpp */

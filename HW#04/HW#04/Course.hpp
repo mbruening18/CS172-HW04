@@ -15,23 +15,26 @@ using namespace std;
 
 //EX04_05 – Liang Programming Exercise 11.13: the Course class
 
+//declares course
 class Course
 {
+    //sets to private
 private:
     int capacity;
     string courseName;
     string* students;
     int numberOfStudents;
     
+    //sets to public
 public:
     Course (const string& courseName, int capacity);
     ~Course();
-    string getCourseName() const;
-    void addStudent(const string& name);
-    void dropStudent(const string& name);
+    string getCourseName() const; 
+    void addStudent(const string& name); //add students
+    void dropStudent(const string& name); //removes students
     string* getStudents() const;
     int getNumberOfStudents() const;
-    int Clear();
+    int Clear(); //gets rid of students
 
 };
 
